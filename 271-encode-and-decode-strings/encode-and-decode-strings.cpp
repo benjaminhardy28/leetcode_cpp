@@ -10,7 +10,6 @@ public:
             encoded_string.append(len_string);
             encoded_string.append(s);
         }
-        cout << "enc" << encoded_string;
         return encoded_string;
     }
 
@@ -21,18 +20,14 @@ public:
 
         while(i<s.size()){
             string string_digit;
-            int start = i;
             while(i<s.size() && isdigit(s[i])){
-                cout << "is digit apparently" << s[i] << "\n";
                 string_digit += s[i];
                 i++;
             }
             int digit = stoi(string_digit);
             i++; // skip semicolon
-            cout << i << start << digit << "\n";
             string dec = s.substr(i,digit);
             decoded_string.push_back(dec);
-            cout << "dec " << dec << "\n";
             i=i+digit;
         }
     
