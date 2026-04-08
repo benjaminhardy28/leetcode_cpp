@@ -10,7 +10,6 @@ public:
         for(int i=1; i<size; i++){
             arrL[i] = nums[i-1]*mult;
             mult = nums[i-1]*mult;
-            cout << arrL[i] << "\n";
         }
 
         mult = 1;
@@ -18,7 +17,6 @@ public:
         for(int i=size-2; i>=0; i--){
             arrR[i] = nums[i+1]*mult;
             mult = nums[i+1]*mult;
-            cout << arrR[i] << "\n";
         }
 
         vector<int> res;
