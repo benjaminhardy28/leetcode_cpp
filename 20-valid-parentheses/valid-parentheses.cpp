@@ -34,6 +34,6 @@ public:
             i++;
         }
 
-        return (stack.size() != 0 ? false : true);
+        return !(stack.size());
     }
 };
