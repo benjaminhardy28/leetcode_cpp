@@ -22,7 +22,7 @@ public:
                 stack.push(s[i]);
             } else {
                 if(stack.size() == 0) return false;
-                
+
                 char top = stack.top();
                 stack.pop();
 
@@ -34,10 +34,6 @@ public:
             i++;
         }
 
-        if(stack.size() != 0){
-            return false;
-        }
-
-        return true; 
+        return (stack.size() != 0 ? false : true);
     }
 };
